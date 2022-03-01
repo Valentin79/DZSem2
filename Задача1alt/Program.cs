@@ -11,4 +11,9 @@ while(i < str.Length)
     array[i] = int.Parse(str[i].ToString());
     i++;
 }
-Console.WriteLine(array[1]);
+
+if(array.Length < 2) 
+{
+    Console.WriteLine("Второй цифры нет.");
+}
+else Console.WriteLine($"Вторая цифра: {array[1]}");
